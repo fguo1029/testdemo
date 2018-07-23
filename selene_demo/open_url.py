@@ -26,8 +26,8 @@ class TestCaseNopLoginFunc:
     #     s('.scan-tear-angle pc').click()
     #     s('.hwid2').should(have.value('折800账号登录'))
     #
-    #     s('#ddusername.t').send_keys('fguo1029')
-    #     s('#ddpw_1_text').send_keys('gF712829')
+    #     s('#ddusername.t').send_keys('error_name')
+    #     s('#ddpw_1_text').send_keys('123456')
     #     s('.login-button').click()
 
     # def test_login_failure(self):
@@ -48,8 +48,8 @@ class TestCaseNopLoginFunc:
         s('.scan-tear-angle pc').click()
         s('.hwid2').should(have.value('折800账号登录'))
 
-        s('#ddusername.t').send_keys('fguo1029')
-        s('#ddpw_1_text').send_keys('gF712829')
+        s('#ddusername.t').send_keys('error_name')
+        s('#ddpw_1_text').send_keys('123456')
         s('.login-button').click()
 
         s('#pperrmsg.error').should(have.exact_text('请完成滑块验证'))
